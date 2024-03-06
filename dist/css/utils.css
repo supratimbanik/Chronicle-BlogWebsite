@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@700&display=swap");
+:root {
+  --main-bg-color: #bd6418;
+  --font1: "Baloo Bhaina 2", cursive;
+  --font2: "Roboto", sans-serif;
+  --font3: "Baloo Bhaina 2", sans-serif;
+}
+
+.center {
+  text-align: center;
+}
+
+.font1 {
+  font-family: var(--font1);
+}
+.font2 {
+  font-family: var(--font2);
+}
+.font3 {
+  font-family: var(--font3);
+}
+
+.max-width-1 {
+  max-width: 80vw;
+}
+
+.max-width-2 {
+  max-width: 60vw;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.mx-1 {
+  margin-left: 23px;
+  margin-right: 23px;
+}
+
+.my-2 {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.search-box {
+  border-radius: 50px;
+  display: flex;
+  background: #f5f5f5;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.search-btn {
+  padding: 5px 5px 5px 5px;
+  border: 1px black;
+  border-radius: 50%;
+  background: none;
+  font-family: var(--font1);
+  cursor: pointer;
+}
+.form-input {
+  display: none;
+  padding-left: 10px;
+  padding-top: 3px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background: #f5f5f5;
+  border-radius: 50px;
+  margin: 0;
+  font-family: var(--font2);
+}
+
+.search-btn:hover {
+  font-weight: bold;
+}
+
+.search-box:hover .form-input {
+  display: inline;
+}

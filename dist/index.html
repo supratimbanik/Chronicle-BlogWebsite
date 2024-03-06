@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/utils.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <title>Chronicle - Home</title>
+  </head>
+
+  <body>
+   <nav class="navigation max-width-1 m-auto">
+      <div class="nav-left">
+        <a href="/index.html" class="font3">Chronicle</a>
+      </div>
+
+      <div class="nav-center">
+        <ul>
+          <li><a href="/index.html" class="nav-link">Home</a></li>
+          <li><a href="/about.html" class="nav-link">About</a></li>
+          <li><a href="/contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <form class="search-form" action="/search" method="GET">
+          <div class="search-box">
+            <input
+              class="form-input"
+              type="text"
+              id="searchKey"
+              name="searchQuery"
+              placeholder="Article Search"
+            />
+            <input
+              type="submit"
+              class="search-btn material-symbols-outlined"
+              value="search"
+            />
+          </div>
+        </form>
+      </div>
+      <div class="side-menu-btn" id="side-menu-toggle"><button>&#9776;</button></div>
+    </nav>
+<div class="side-menu side-menu--hidden" >
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+        <form class="search-form" action="/search" method="GET">
+          <div class="search-box">
+            <input
+              class="form-input"
+              type="text"
+              id="searchKey"
+              name="searchQuery"
+              placeholder="Article Search"
+            />
+            <input
+              type="submit"
+              class="search-btn material-symbols-outlined"
+              value="search"
+            />
+          </div>
+        </form>
+        </div>
+    <div class="max-width-1 m-auto">
+      <hr class="hr1" />
+    </div>
+    <br /><br />
+    <div class="home-articles max-width-1 m-auto font2">
+      <h1>Featured Articles</h1>
+      <div class="home-article">
+        <div class="home-article-img">
+          <img src="img/1.jpg" alt="article" />
+        </div>
+        <div class="home-article-content font1">
+          <a class="blog-link" id="0" href="/blogpost1">
+            <h3>The Future of Technology: What Awaits Us in 2024 and Beyond</h3>
+          </a>
+
+          <div>Supratim Banik</div>
+          <span>10-02-2024</span>
+        </div>
+      </div>
+      <div class="home-article">
+        <div class="home-article-img">
+          <img src="img/2.jpg" alt="article" />
+        </div>
+        <div class="home-article-content font1">
+          <a class="blog-link" id="1" href="/blogpost2">
+            <h3>
+              The Rise of Sustainable Fashion: A Closer Look at Eco-Friendly
+              Trends
+            </h3>
+          </a>
+
+          <div>Supratim Banik</div>
+          <span>26-01-2024</span>
+        </div>
+      </div>
+      <div class="home-article">
+        <div class="home-article-img">
+          <img src="img/3.jpg" alt="article" />
+        </div>
+        <div class="home-article-content font1">
+          <a class="blog-link" id="2" href="/blogpost3">
+            <h3>
+              The Power of Mindfulness: A Guide to Cultivating a Calm and
+              Focused Mind
+            </h3>
+          </a>
+
+          <div>Supratim Banik</div>
+          <span>13-01-2024</span>
+        </div>
+      </div>
+      <div class="home-article">
+        <div class="home-article-img">
+          <img src="img/4.jpg" alt="article" />
+        </div>
+        <div class="home-article-content font1">
+          <a class="blog-link" id="3" href="/blogpost4">
+            <h3>
+              Exploring the Wonders of Space Tourism: The Future of Interstellar
+              Adventures
+            </h3>
+          </a>
+
+          <div>Supratim Banik</div>
+          <span>27-12-2023</span>
+        </div>
+      </div>
+      <div class="home-article">
+        <div class="home-article-img">
+          <img src="img/5.jpg" alt="article" />
+        </div>
+        <div class="home-article-content font1">
+          <a class="blog-link" id="4" href="/blogpost5">
+            <h3>
+              Unveiling the Mysteries of Ancient Civilizations: Archaeological
+              Marvels Around the Globe
+            </h3>
+          </a>
+
+          <div>Supratim Banik</div>
+          <span>11-12-2023</span>
+        </div>
+      </div>
+    </div>
+    <div class="max-width-1 m-auto">
+      <hr />
+    </div>
+    <div class="footer">
+      <p>Copyright © 2024 Chronicle. All rights reserved.</p>
+    </div>
+    <script src="../functions/index.js"></script>
+   <script>document.getElementById('side-menu-toggle').addEventListener('click', function() {
+  document.querySelector('.side-menu').classList.toggle('side-menu--hidden');
+});</script>
+    </body>
+  </body>
+</html>

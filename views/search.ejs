@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/utils.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <title>Chronicle - Home</title>
+  </head>
+
+  <body>
+   <nav class="navigation max-width-1 m-auto">
+      <div class="nav-left">
+        <a href="/index.html" class="font3">Chronicle</a>
+      </div>
+
+      <div class="nav-center">
+        <ul>
+          <li><a href="/index.html" class="nav-link">Home</a></li>
+          <li><a href="/about.html" class="nav-link">About</a></li>
+          <li><a href="/contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <form class="search-form" action="/search" method="GET">
+          <div class="search-box">
+            <input
+              class="form-input"
+              type="text"
+              id="searchKey"
+              name="searchQuery"
+              placeholder="Article Search"
+            />
+            <input
+              type="submit"
+              class="search-btn material-symbols-outlined"
+              value="search"
+            />
+          </div>
+        </form>
+      </div>
+      <div class="side-menu-btn" id="side-menu-toggle"><button>&#9776;</button></div>
+    </nav>
+<div class="side-menu side-menu--hidden" >
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+        <form class="search-form" action="/search" method="GET">
+          <div class="search-box">
+            <input
+              class="form-input"
+              type="text"
+              id="searchKey"
+              name="searchQuery"
+              placeholder="Article Search"
+            />
+            <input
+              type="submit"
+              class="search-btn material-symbols-outlined"
+              value="search"
+            />
+          </div>
+        </form>
+        </div>
+      <div class="max-width-1 m-auto">
+      <hr class="hr1" />
+    </div>
+    <br><br>
+    <div class="home-articles max-width-1 m-auto font2 " style="min-height: 90vh;">
+      <h1 style="padding-left: 18px;">Search Results</h1>
+      <%searchResult.forEach(item=>{%>
+      <div class="home-article">
+        <div class="home-article-img">
+          <%-item.blogImg%>
+        </div>
+        <div class="home-article-content font1">
+          <%-item.url%>
+            <h3><%=item.title%></h3>
+          </a>
+
+          <div><%=item.author%></div>
+          <span><%=item.date%></span>
+        </div>
+      </div>
+      <%})%>
+    </div>
+    <div class="max-width-1 m-auto">
+      <hr />
+    </div>
+    <div class="footer">
+      <p>Copyright © 2024 Chronicle. All rights reserved.</p>
+    </div>
+    <script src="../functions/index.js"></script>
+    <script>document.getElementById('side-menu-toggle').addEventListener('click', function() {
+  document.querySelector('.side-menu').classList.toggle('side-menu--hidden');
+});</script>
+  </body>
+</html>

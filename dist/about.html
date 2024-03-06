@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/utils.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+
+    <title>Chronicle - About</title>
+  </head>
+
+  <body>
+    <nav class="navigation max-width-1 m-auto">
+      <div class="nav-left">
+        <a href="/index.html" class="font3">Chronicle</a>
+      </div>
+
+      <div class="nav-center">
+        <ul>
+          <li><a href="/index.html" class="nav-link">Home</a></li>
+          <li><a href="/about.html" class="nav-link">About</a></li>
+          <li><a href="/contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <form class="search-form" action="/search" method="GET">
+          <div class="search-box">
+            <input
+              class="form-input"
+              type="text"
+              id="searchKey"
+              name="searchQuery"
+              placeholder="Article Search"
+            />
+            <input
+              type="submit"
+              class="search-btn material-symbols-outlined"
+              value="search"
+            />
+          </div>
+        </form>
+      </div>
+      <div class="side-menu-btn" id="side-menu-toggle">
+        <button>&#9776;</button>
+      </div>
+    </nav>
+    <div class="side-menu side-menu--hidden">
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+      <form class="search-form" action="/search" method="GET">
+        <div class="search-box">
+          <input
+            class="form-input"
+            type="text"
+            id="searchKey"
+            name="searchQuery"
+            placeholder="Article Search"
+          />
+          <input
+            type="submit"
+            class="search-btn material-symbols-outlined"
+            value="search"
+          />
+        </div>
+      </form>
+    </div>
+    <div class="max-width-1 m-auto">
+      <hr class="hr1" />
+    </div>
+    <br />
+    <br />
+    <div class="home-articles max-width-1 m-auto font2">
+      <h1>About</h1>
+      <div class="about-content max-width-1 m-auto font3">
+        <h2>Chronicle: Where Stories Unfold</h2>
+        <p>
+          Welcome to Chronicle, your one-stop destination for captivating
+          stories and insightful perspectives. We are a vibrant online community
+          of passionate writers and curious readers, driven by a shared love for
+          the written word.
+        </p>
+        <br />
+        <p>
+          Chronicle is more than just a blog; it's a chronicle of our times, a
+          tapestry woven from diverse voices and experiences. We delve into a
+          kaleidoscope of topics, from the deeply personal to the globally
+          relevant, ensuring there's always something to pique your interest and
+          ignite your imagination.
+        </p>
+        <br />
+        <h3>What sets us apart?</h3>
+        <br />
+        <ul>
+          <li>
+            Authenticity: We champion unique voices and perspectives, believing
+            that every story deserves to be heard.
+          </li>
+          <br />
+          <li>
+            Quality: We curate exceptional content, meticulously crafted by our
+            talented writers and meticulously edited for your reading pleasure.
+          </li>
+          <br />
+          <li>
+            Inclusivity: We embrace diversity in all its forms, creating a
+            welcoming space for everyone to connect and share.
+          </li>
+          <br />
+          <li>
+            Community: We foster a vibrant community of readers and writers who
+            engage in meaningful conversations and forge lasting connections.
+          </li>
+          <br />
+        </ul>
+
+        <h3>What can you expect on Chronicle?</h3>
+        <br />
+        <ul>
+          <li>
+            Thought-provoking articles: Explore a wide range of topics, from
+            current affairs and social commentary to personal narratives and
+            creative musings.
+          </li>
+          <br />
+          <li>
+            In-depth interviews: Get up close and personal with fascinating
+            individuals who are making a difference in the world.
+          </li>
+          <br />
+          <li>
+            Engaging discussions: Join our community forums and share your
+            thoughts, ideas, and experiences on the topics that matter to you.
+          </li>
+          <br />
+          <li>
+            Regular updates: We publish fresh content daily, ensuring you always
+            have something new to discover.
+          </li>
+          <br />
+        </ul>
+        <p>
+          Whether you're a seasoned wordsmith or simply an avid reader,
+          Chronicle welcomes you with open arms. Join us on this journey of
+          exploration, expression, and connection. Start your adventure today!
+        </p>
+        <br />
+        <p>
+          P.S. We're based in India, but our stories transcend borders and
+          resonate with readers worldwide. So, wherever you are in the world, we
+          invite you to be part of our chronicle.
+        </p>
+      </div>
+    </div>
+    <div class="max-width-1 m-auto">
+      <hr />
+    </div>
+    <div class="footer">
+      <p>Copyright © 2024 Chronicle. All rights reserved.</p>
+    </div>
+  </body>
+  <script src="../functions/index.js"></script>
+  <script>
+    document
+      .getElementById("side-menu-toggle")
+      .addEventListener("click", function () {
+        document
+          .querySelector(".side-menu")
+          .classList.toggle("side-menu--hidden");
+      });
+  </script>
+</html>
