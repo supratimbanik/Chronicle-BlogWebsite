@@ -25,3 +25,6 @@ Chronicle includes a powerful search feature, enabling users to discover a vast 
 
 Experience the seamless journey of exploration and discovery on Chronicle! Visit the website [here](https://chronicle-09mn.onrender.com) to dive into a world of captivating articles and engaging content.
 
+## Contributors
+- Supratim Banik: [supratimbanik](https://github.com/supratimbanik)
+
